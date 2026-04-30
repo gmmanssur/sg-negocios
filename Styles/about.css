@@ -1,0 +1,82 @@
+#sobre .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 80px; 
+    align-items: center;
+}
+
+.sobre-visual {
+    position: relative;
+}
+
+.sobre-box {
+    background: var(--navy2);
+    border: 1px solid var(--line);
+    padding: 48px 44px;
+    position: relative;
+}
+
+.sobre-box::before {
+    content: '';
+    position: absolute; 
+    top: -1px; 
+    left: 40px; 
+    right: 40px;
+    height: 2px; 
+    background: var(--gold);
+}
+
+.sobre-year {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem; 
+    font-weight: 700; 
+    color: var(--gold);
+    line-height: 1; 
+    margin-bottom: 8px;
+}
+
+.sobre-box p { 
+    color: var(--gray); 
+    font-size: .95rem; 
+    font-weight: 300; 
+    line-height: 1.7; 
+}
+
+.sobre-accent {
+    position: absolute; 
+    bottom: -24px; 
+    right: -24px;
+    width: 100px; 
+    height: 100px;
+    border: 1px solid var(--line);
+    z-index: -1;
+}
+
+.sobre-text .section-lead { 
+    margin-bottom: 32px; 
+}
+
+.pillar-list { 
+    list-style: none; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px; 
+}
+
+.pillar-list li {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 14px;
+    font-size: .92rem; 
+    color: var(--gray);
+}
+
+.pillar-list li::before {
+    content: '';
+    width: 6px; 
+    height: 6px; 
+    border-radius: 50%;
+    background: var(--gold); 
+    flex-shrink: 0; 
+    margin-top: 7px;
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&G – SEG Negócios | Soluções em Tecnologia para Educação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/hero.css">
+    <link rel="stylesheet" href="./Styles/about.css">
+    <link rel="stylesheet" href="./Styles/services.css">
+    <link rel="stylesheet" href="./Styles/clients.css">
+    <link rel="stylesheet" href="./Styles/contact.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+  </head>
+  
+  <body>
+    <nav id="navbar">
+      <div class="container">
+        <a href="#hero" class="nav-logo">S<span>&</span>G <span style="color:var(--white);font-weight:400;font-size:1rem;letter-spacing:.08em">NEGÓCIOS</span></a>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Soluções</a></li>
+          <li><a href="#marcas">Parceiros</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a href="https://wa.me/5511957702886" target="_blank" class="nav-cta">Fale Conosco</a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-lines"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow fade-up">Tecnologia que transforma a educação pública</div>
+          <h1 class="hero-title fade-up delay-1">
+            Soluções integradas<br>para <em>modernizar</em><br>as escolas do Brasil
+          </h1>
+          <p class="hero-sub fade-up delay-2">
+            Desde 2014, conectamos tecnologia, infraestrutura e propósito para levar inovação às salas de aula das redes públicas de ensino em todo o país.
+          </p>
+          <div class="hero-actions fade-up delay-3">
+            <a href="#contato" class="btn-primary">Fale com um especialista</a>
+            <a href="#servicos" class="btn-ghost">Nossas soluções</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num">+14</div>
+              <div class="stat-label">Anos de mercado</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">+18</div>
+              <div class="stat-label">Municípios atendidos</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">4</div>
+              <div class="stat-label">Marcas parceiras</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="brands">
+      <div class="container">
+          <div class="brands-carroussel-grid" data-reveal>
+            <div class="brand-item">
+              <img src="./Assets/multilaser.svg" alt="Multilaser Logo" srcset="" height="40" style="object-fit:contain;">
+            </div>
+
+            <div class="brand-item">
+              <img src="./Assets/benq.png" alt="BenQ Logo" srcset="" height="60" style="object-fit:contain;">
+            </div>
+
+            <div class="brand-item">
+              <img src="./Assets/tes.webp" alt="TES Logo" srcset="" height="40" style="object-fit:contain;">
+            </div>
+
+            <div class="brand-item">
+              <img src="./Assets/educacross.png" alt="Educacross Logo" srcset="" height="40" style="object-fit:contain;">
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="sobre">
+      <div class="container">
+        <div class="sobre-visual" data-reveal>
+          <div class="sobre-box">
+            <div class="sobre-year">2014</div>
+            <p>Fundada em 2014, com raízes no setor desde 2012, a S&amp;G Negócios nasceu com um propósito claro: modernizar a educação pública brasileira por meio de tecnologia acessível, eficiente e sustentável.</p>
+          </div>
+          <div class="sobre-accent"></div>
+        </div>
+        <div class="sobre-text" data-reveal>
+          <div class="section-tag">Sobre nós</div>
+          <h2 class="section-title">Experiência que<br>constrói confiança</h2>
+          <p class="section-lead">
+            Somos uma empresa especializada em soluções integradas de tecnologia educacional, atuando em todo o Brasil com projetos que impactam diretamente a qualidade de ensino nas redes públicas.
+          </p>
+          <ul class="pillar-list">
+            <li>Representação oficial das principais marcas do segmento educacional</li>
+            <li>Fornecimento completo de hardware e software para ambientes escolares</li>
+            <li>Serviços de instalação e infraestrutura com excelência técnica</li>
+            <li>Palestras e ações educativas para desenvolvimento humano</li>
+            <li>Relacionamento direto com prefeituras e secretarias estaduais de educação</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="servicos">
+      <div class="container">
+        <div data-reveal>
+          <div class="section-tag">Soluções</div>
+          <h2 class="section-title">O que entregamos</h2>
+          <p class="section-lead">Soluções completas, do planejamento à operação, para transformar o ambiente escolar.</p>
+        </div>
+        <div class="services-grid" data-reveal>
+          <div class="service-card">
+            <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 44 44"><rect x="6" y="10" width="28" height="20" rx="2"/><path d="M14 30v4M30 30v4M10 34h24"/><path d="M14 18h16M14 22h10"/></svg>
+            <h3>Hardware Educacional</h3>
+            <p>Computadores, tablets, projetores, lousas digitais e periféricos selecionados para o ambiente escolar público, com suporte técnico especializado.</p>
+          </div>
+          <div class="service-card">
+            <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 44 44"><rect x="8" y="8" width="28" height="20" rx="2"/><path d="M16 28l-4 8M28 28l4 8M14 36h16"/><circle cx="22" cy="18" r="4"/></svg>
+            <h3>Software e Plataformas</h3>
+            <p>Sistemas de gestão escolar, plataformas de ensino digital e conteúdos educacionais alinhados à BNCC e às demandas das redes públicas.</p>
+          </div>
+          <div class="service-card">
+            <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 44 44"><path d="M8 36l8-8 8 8 8-14 8 8"/><path d="M6 14h4M6 20h4M6 26h4"/></svg>
+            <h3>Infraestrutura e Redes</h3>
+            <p>Projetos completos de infraestrutura tecnológica: cabeamento, redes Wi-Fi, salas de informática e ambientes conectados.</p>
+          </div>
+          <div class="service-card row2">
+            <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 44 44"><circle cx="22" cy="16" r="6"/><path d="M10 36c0-6.627 5.373-12 12-12s12 5.373 12 12"/><circle cx="34" cy="14" r="4"/><path d="M38 28c0-4-1.8-7.2-4-9"/></svg>
+            <h3>Instalação e Suporte</h3>
+            <p>Equipe técnica capacitada para implantação, configuração e manutenção em todo o Brasil, garantindo a continuidade dos projetos.</p>
+          </div>
+          <div class="service-card row2">
+            <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 44 44"><path d="M22 8v28M8 22h28"/><circle cx="22" cy="22" r="14"/><circle cx="22" cy="22" r="6"/></svg>
+            <h3>Gestão de Projetos</h3>
+            <p>Acompanhamento integral desde a proposta técnica até a entrega final, com foco em prazos, qualidade e conformidade com editais públicos.</p>
+          </div>
+          <div class="service-card row2">
+            <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 44 44"><path d="M22 10c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12"/><path d="M28 8l6 2-2 6"/><path d="M34 10l-6 6"/></svg>
+            <h3>Palestras e Capacitação</h3>
+            <p>Ações educativas presenciais voltadas ao desenvolvimento humano de educadores, gestores e comunidades escolares.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="marcas">
+      <div class="container">
+        <div class="marcas-header" data-reveal>
+          <div>
+            <div class="section-tag">Ecossistema</div>
+            <h2 class="section-title">Marcas Parceiras</h2>
+          </div>
+          <p style="color:var(--gray);font-size:.9rem;max-width:340px;text-align:right;">Representamos as líderes do segmento de tecnologia educacional no Brasil.</p>
+        </div>
+
+        <div class="marcas-grid" data-reveal>
+          <div class="multi marca-item">Multilaser</div>
+          <div class="benq marca-item">BenQ</div>
+          <div class="tes marca-item">TES</div>
+          <div class="educacross marca-item">Educacross</div>
+        </div>
+
+        <div data-reveal>
+          <div class="clientes-title">Municípios e secretarias atendidos</div>
+          <div class="clientes-flow">
+            <span class="cliente-tag">Osasco / SP</span>
+            <span class="cliente-tag">Santana de Parnaíba / SP</span>
+            <span class="cliente-tag">Itu / SP</span>
+            <span class="cliente-tag">Guararema / SP</span>
+            <span class="cliente-tag">Rio de Janeiro / RJ</span>
+            <span class="cliente-tag">Macaé / RJ</span>
+            <span class="cliente-tag">Campos dos Goytacazes / RJ</span>
+            <span class="cliente-tag">Niterói / RJ</span>
+            <span class="cliente-tag">Rio das Ostras / RJ</span>
+            <span class="cliente-tag">SEEDUC / RJ</span>
+            <span class="cliente-tag">SEDUC / PA</span>
+            <span class="cliente-tag">SEDUC / ES</span>
+            <span class="cliente-tag">Vitória / ES</span>
+            <span class="cliente-tag">Vila Velha / ES</span>
+            <span class="cliente-tag">Anchieta / ES</span>
+            <span class="cliente-tag">Cachoeiro do Itapemirim / ES</span>
+            <span class="cliente-tag">Aracruz / ES</span>
+            <span class="cliente-tag">Serra / ES</span>
+            <span class="cliente-tag" style="border-color:var(--gold);color:var(--gold);font-style:italic">+ outros municípios em todo o Brasil</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="contato">
+      <div class="container">
+        <div data-reveal>
+          <div class="section-tag">Contato</div>
+          <h2 class="section-title">Vamos conversar?</h2>
+          <p class="section-lead">Entre em contato e descubra como podemos levar tecnologia e inovação para a sua rede de ensino.</p>
+        </div>
+        <div class="contato-grid" data-reveal>
+          <div class="contact-info">
+            <div class="contact-row">
+              <div class="contact-icon">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">WhatsApp</div>
+                <div class="contact-val"><a href="https://wa.me/5511957702886" target="_blank">(11) 95770-2886</a></div>
+                <div class="contact-note">Atendimento de segunda a sexta</div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">E-mail</div>
+                <div class="contact-val"><a href="mailto:segnegocios1@gmail.com">segnegocios1@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Endereço</div>
+                <div class="contact-val">Av. Senador Vergueiro, 2123 — Sala 1205, 12º andar</div>
+                <div class="contact-note">Centro — São Bernardo do Campo / SP — CEP 09750-001</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3 class="form-title">Envie uma mensagem</h3>
+            <div class="form-group">
+              <label for="Name">Nome</label>
+              <input type="text" placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+              <label for="E-mail">E-mail</label>
+              <input type="email" placeholder="seu@email.com">
+            </div>
+            <div class="form-group">
+              <label for="City">Município / Secretaria</label>
+              <input type="text" placeholder="Ex: Prefeitura de São Paulo">
+            </div>
+            <div class="form-group">
+              <label for="Message">Mensagem</label>
+              <textarea placeholder="Como podemos ajudar?" id="Mensagem"></textarea>
+            </div>
+            <button class="form-submit" onclick="sendWhatsapp()">Enviar via WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h3>S<span>&</span>G Negócios</h3>
+            <p>Transformando a educação pública brasileira por meio de tecnologia integrada, infraestrutura e propósito desde 2014.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#servicos">Soluções</a></li>
+              <li><a href="#marcas">Marcas Parceiras</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contato</h4>
+            <ul>
+              <li><a href="https://wa.me/5511957702886" target="_blank">(11) 95770-2886</a></li>
+              <li><a href="mailto:segnegocios1@gmail.com">segnegocios1@gmail.com</a></li>
+              <li><a href="#contato">SBC / SP — Sala 1205</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-map">
+          <iframe
+            title="Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.0!2d-46.5505!3d-23.7058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Senador+Vergueiro%2C+2123%2C+Centro%2C+S%C3%A3o+Bernardo+do+Campo%2C+SP!5e0!3m2!1spt-BR!2sbr!4v1"
+            width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 <strong>S&G Negócios</strong>. Todos os direitos reservados.</p>
+          <p style="font-size:.74rem;color:var(--gray);">Av. Senador Vergueiro, 2123 — Sala 1205 — Centro SBC/SP — CEP 09750-001</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+#servicos { 
+    background: var(--navy2); 
+}
+
+.services-grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1px;
+    border: 1px solid var(--line);
+}
+
+.service-card {
+    padding: 44px 36px;
+    border: none;
+    background: var(--navy2);
+    position: relative;
+    transition: background .3s;
+    overflow: hidden;
+}
+
+.service-card::after {
+    content: '';
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    height: 2px; 
+    background: var(--gold);
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform .35s ease;
+}
+
+.service-card:hover { 
+    background: rgba(184,147,74,.05); 
+}
+
+.service-card:hover::after { 
+    transform: scaleX(1); 
+}
+
+.service-card + .service-card { 
+    border-left: 1px solid var(--line); 
+}
+
+.services-grid .row2 { 
+    border-top: 1px solid var(--line); 
+}
+
+.service-icon {
+    width: 44px; 
+    height: 44px; 
+    margin-bottom: 24px;
+    color: var(--gold);
+}
+
+.service-card h3 {
+    font-size: 1.25rem; 
+    margin-bottom: 12px;
+    letter-spacing: .01em;
+}
+
+.service-card p { 
+    font-size: .88rem; 
+    color: var(--gray); 
+    font-weight: 300; 
+    line-height: 1.7; 
+}
