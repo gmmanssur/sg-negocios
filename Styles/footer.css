@@ -178,30 +178,6 @@
     line-height: 1.7;
 }
 
-.footer-bottom-linkedin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-  color: rgba(255,255,255,0.55);
-  margin-top: 15px;
-    font-size: 0.6rem;
-}
-
-.footer-bottom-lindekin p {
-    margin: 0;
-    font-size: 0.6rem;
-    line-height: 1.7;
-    color: var(--gold) !important;
-}
-
-.linkedin-link {
-    color: var(--gold-lt);
-    text-decoration: none;
-    transition: color 0.25s ease;
-}
-
 .footer-bottom a {
     color: var(--gold-lt);
     text-decoration: none;
