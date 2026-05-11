@@ -174,7 +174,7 @@
 
 .footer-bottom p {
     color: rgba(255,255,255,0.55);
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     line-height: 1.7;
 }
 
@@ -186,11 +186,12 @@
   text-align: center;
   color: rgba(255,255,255,0.55);
   margin-top: 15px;
+    font-size: 0.6rem;
 }
 
 .footer-bottom-lindekin p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     line-height: 1.7;
     color: var(--gold) !important;
 }
