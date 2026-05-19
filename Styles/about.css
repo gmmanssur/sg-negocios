@@ -1,7 +1,7 @@
 #about {
     position: relative;
     overflow: hidden;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .about-bg {
@@ -32,7 +32,7 @@
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 40px;
 }
 
 .about-left {
@@ -45,9 +45,9 @@
 .about-year-card {
     position: relative;
     width: 100%;
-    max-width: 380px;
+    max-width: 300px;
     overflow: hidden;
-    padding: 24px;
+    padding: 20px;
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 28px;
     background:
@@ -77,7 +77,7 @@
 
 .about-founder-image {
     width: 100%;
-    max-width: 320px;
+    max-width: 250px;
     height: auto;
     display: block;
     margin: 0 auto 24px;
@@ -86,16 +86,16 @@
 }
 
 .about-year-card h2 {
-    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-size: clamp(1.2rem, 4vw, 1.9rem);
     line-height: 1.1;
     font-weight: 700;
     color: var(--gold);
-    margin-bottom: 8px;
+    margin-bottom: 3px;
 }
 
 .about-year-card p {
     color: var(--gray);
-    font-size: 1rem;
+    font-size: 0.6rem;
     line-height: 1.7;
 }
 
@@ -288,5 +288,14 @@
 
     .bg-about-mobile {
         display: none;
+    }
+
+    .about-year-card {
+        max-width: 380px;
+    }
+
+    .about-founder-image {
+        width: 100%;
+        max-width: 380px;
     }
 }
