@@ -127,13 +127,21 @@
 
 .hero-stats {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 .hero-stat-item {
-    padding-top: 5px;
-    border-top: 1px solid rgba(255,255,255,0.08);
+    border-top: none;
+    border-left: 1px solid rgba(255,255,255,0.08);
+
+    padding-top: 0;
+    padding-left: 24px;
+}
+
+.hero-stat-item:first-child {
+    border-left: none;
+    padding-left: 0;
 }
 
 .hero-stat-item h2 {
@@ -155,24 +163,6 @@
 
     .hero-buttons a {
         width: auto;
-    }
-
-    .hero-stats {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
-    }
-
-    .hero-stat-item {
-        border-top: none;
-        border-left: 1px solid rgba(255,255,255,0.08);
-
-        padding-top: 0;
-        padding-left: 24px;
-    }
-
-    .hero-stat-item:first-child {
-        border-left: none;
-        padding-left: 0;
     }
 }
 
