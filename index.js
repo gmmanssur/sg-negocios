@@ -29,13 +29,50 @@ links.querySelectorAll('a').forEach(a => {
 
 // whatsapp
 const wppButon = document.getElementById('wpp-button');
+const toast = document.getElementById('toast');
 
 wppButon.addEventListener('click', () => {
-  alert("huifgerjie");
-  const name = document.getElementById('name').value;
-  const org  = document.getElementById('empresa').value;
-  const msg  = document.getElementById('description').value;
-  const text = `Olá! Me chamo ${name}, represento ${org} e gostaria de saber mais sobre as soluções da S&G Negócios.\n\n${msg}`;
-  window.open(`https://wa.me/5511957702886?text=${encodeURIComponent(text)}`, '_blank');
-  alert("huifgerjie");
+  const nameInput = document.getElementById('name');
+  const orgInput  = document.getElementById('empresa');
+  const msgInput  = document.getElementById('description');
+
+  const name = nameInput.value.trim();
+  const org  = orgInput.value.trim();
+  const msg  = msgInput.value.trim();
+
+  [nameInput, orgInput, msgInput].forEach(field => {
+    field.classList.remove('field-required');
+  });
+
+  if (!name || !org || !msg) {
+    if (!name) nameInput.classList.add('field-required');
+    if (!org)  orgInput.classList.add('field-required');
+    if (!msg)  msgInput.classList.add('field-required');
+
+    showToast(
+      'Preencha todos os campos antes de continuar.'
+    );
+
+    return;
+  }
+
+  // mensagem whatsapp
+  const text =
+`Olá! Me chamo ${name}, represento ${org} e gostaria de saber mais sobre as soluções da S&G Negócios.
+
+${msg}`;
+
+  window.open(
+    `https://wa.me/5511957702886?text=${encodeURIComponent(text)}`,
+    '_blank'
+  );
 });
+
+function showToast(message) {
+  toast.querySelector('span').textContent = message;
+  toast.classList.add('show');
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3500);
+}

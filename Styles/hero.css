@@ -31,20 +31,21 @@
 }
 
 .hero-badge {
-    text-transform: uppercase;
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: var(--gold);
-    font-size: .72rem; 
-    letter-spacing: .2em;
+    font-size: 0.72rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
 }
 
-.hero-badge::before {
-    content: ''; 
-    width: 20px; 
-    height: 1px; 
+.hero-badge::before,
+.hero-badge::after {
+    content: "";
+    width: 20px;
+    height: 1px;
     background: var(--gold);
 }
 

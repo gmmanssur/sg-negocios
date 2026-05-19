@@ -59,7 +59,7 @@
 .partners-badge::before,
 .partners-badge::after {
     content: "";
-    width: 28px;
+    width: 20px;
     height: 1px;
     background: var(--gold);
 }
