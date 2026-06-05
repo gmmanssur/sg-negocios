@@ -41,8 +41,7 @@
     text-transform: uppercase;
 }
 
-.hero-badge::before,
-.hero-badge::after {
+.hero-badge::before {
     content: "";
     width: 20px;
     height: 1px;

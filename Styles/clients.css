@@ -66,7 +66,7 @@
 
 .clients-header h2 {
     margin-bottom: 8px;
-    font-size: clamp(2rem, 7vw, 4rem);
+    font-size: clamp(1rem, 7vw, 2rem);
     line-height: 1.02;
     font-weight: 700;
     letter-spacing: -2px;
@@ -102,6 +102,7 @@
 }
 
 .main-client-card {
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     min-height: 92px;
@@ -303,6 +304,7 @@
 
 .client-city-card,
 .client-city-more {
+    cursor: pointer;
     min-height: 42px;
     display: inline-flex;
     align-items: center;
